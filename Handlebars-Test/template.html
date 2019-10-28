@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<meta http-equiv="refresh" content="10">
+<title>TEST</title>
+</head>
+
+<body onload="checkID()">
+
+    <div class="grid-container">
+        <div class="Upper-Left">Upper Left: {{uleft}}<p hidden id="uleft">{{uleft}}</p><p id="demo"></p></div>
+        <div class="Upper-Right">Upper Right: {{uright}}</div>
+        <div class="LowerLeft">Lower Left: {{lleft}}</div>
+        <div class="LowerRight">Lower Right: {{lright}}</div>
+        <div class="Footer">Footer: {{footer}}</div>
+    </div>
+</body>
+
+
+
+</html>
+<audio id="my_audio" src="old-fashioned-door-bell-daniel_simon.mp3" preload="auto" loop="loop" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<script>
+
+    function checkID() {
+        var text = "";
+        if (document.getElementById("uleft").innerHTML >= 20) {
+            document.getElementById("my_audio").play();
+            text = "hit 20";
+        } else {
+            text = "not hit 20";
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+</script>
