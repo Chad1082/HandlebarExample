@@ -10,12 +10,38 @@
 
 <body onload="checkID()">
 
-    <div class="grid-container">
-        <div class="Upper-Left">Upper Left: {{uleft}}<p hidden id="uleft">{{uleft}}</p><p id="demo"></p></div>
-        <div class="Upper-Right">Upper Right: {{uright}}</div>
-        <div class="LowerLeft">Lower Left: {{lleft}}</div>
-        <div class="LowerRight">Lower Right: {{lright}}</div>
-        <div class="Footer">Footer: {{footer}}</div>
+    <div class="grid-container" id="GridContainer">
+        <div class="Upper-Left" id="UpperLeft">
+            Upper Left: {{uleft}}<p hidden id="uleft">{{uleft}}</p><p id="demo"></p>
+            <table id="LoggedCalls">
+                <thead>
+                    <tr>
+                        <th colspan="2">Logged Calls</th>
+                    </tr>
+                    <tr>
+                        <th>Severity</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Sev 1 &amp; 2</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Sev 3, 4 &amp; 5</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>SR</td><td>30</td>
+                </tr>
+
+            </table>
+        
+        </div>
+        <div class="Upper-Right" id="UpperRight">Upper Right: {{uright}}</div>
+        <div class="LowerLeft" id="LowerLeft">Lower Left: {{lleft}}</div>
+        <div class="LowerRight" id="LowerRight">Lower Right: {{lright}}</div>
+        <div class="Footer" id="Footer">Footer: {{footer}}</div>
     </div>
 </body>
 

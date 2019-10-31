@@ -376,12 +376,73 @@ textarea {
     grid-template-areas: "Upper-Left Upper-Right" "LowerLeft LowerRight" "Footer Footer";
   }
   
-  .Upper-Left { grid-area: Upper-Left; }
-  
-  .Upper-Right { grid-area: Upper-Right; }
-  
-  .LowerLeft { grid-area: LowerLeft; }
-  
-  .LowerRight { grid-area: LowerRight; }
-  
-  .Footer { grid-area: Footer; }
+  .Upper-Left { grid-area: Upper-Left; 
+                padding: 5px 5px 5px 5px;
+  }
+
+.Upper-Right {
+    grid-area: Upper-Right;
+    padding: 10px 5px 5px 5px;
+}
+
+.LowerLeft {
+    grid-area: LowerLeft;
+    padding: 20px 5px 5px 13px;
+}
+
+.LowerRight {
+    grid-area: LowerRight;
+    padding: 20px 5px 5px 13px;
+}
+
+.Footer {
+    grid-area: Footer;
+    padding: 5px 5px 5px 5px;
+}
+
+#UpperLeft {
+    border-radius: 0px 15px 50px 30px;
+    background: #38b5b1;
+    
+}
+#UpperRight {
+    border-radius: 15px 0px 30px 50px;
+    background: #31ad6d;
+}
+
+#LowerRight {
+    border-radius: 50px 30px 15px 15px;
+    background: #70ed28;
+}
+
+#LowerLeft {
+    border-radius: 30px 50px 15px 15px;
+    background: #ee8ef5;
+}
+#Footer {
+    border-radius: 15px 15px 15px 15px;
+    background: #cc4100;
+}
+#GridContainer {
+    background: #000000;
+}
+
+#LoggedCalls {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:42px;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#LoggedCalls td {
+        padding: 5px 0px 5px 5px;
+        border-bottom: 1px groove red;
+    }
+#LoggedCalls tr:nth-child(even) {
+        background-color: #e6d5d5;
+    }
+#LoggedCalls th {
+        padding: 5px 5px 5px 5px;
+        text-align: center;
+        background-color: #c29999;
+    }
